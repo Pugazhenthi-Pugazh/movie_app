@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:movie_app/Models/Movie.dart';
 
 class MovieResponse {
