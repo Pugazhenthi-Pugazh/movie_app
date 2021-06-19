@@ -5,7 +5,7 @@ class Movie {
   final String backPoster;
   final String poster;
   final String overview;
-  final String rating;
+  final double rating;
 
   Movie(
     this.id,
@@ -21,8 +21,8 @@ class Movie {
       : id = json["id"],
         popularity = json["popularity"],
         title = json["title"],
-        backPoster = json["backposter"],
-        poster = json["poster"],
+        backPoster = json["backdrop_path"],
+        poster = json["poster_path"],
         overview = json["overview"],
-        rating = json["rating"];
+        rating = json["vote_average"].toDouble();
 }

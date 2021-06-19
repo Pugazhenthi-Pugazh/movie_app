@@ -4,7 +4,7 @@ import 'package:movie_app/Models/MovieResponse.dart';
 import 'package:movie_app/Models/PersonResponse.dart';
 
 class API {
-  String apiKey = "https://api.themoviedb.org/2b6e3af0b577423063b6a6e271986215";
+  String apiKey = "2b6e3af0b577423063b6a6e271986215";
   static String url = "https://api.themoviedb.org/3";
 
   final Dio dio = Dio();
