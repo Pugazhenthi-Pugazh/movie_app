@@ -1,6 +1,5 @@
 import 'package:movie_app/API/API.dart';
 import 'package:movie_app/Models/GenereResponse.dart';
-import 'package:movie_app/Models/MovieResponse.dart';
 import 'package:rxdart/rxdart.dart';
 
 class GenersList {
@@ -8,7 +7,7 @@ class GenersList {
   final BehaviorSubject<GenereResponse> _subject =
       BehaviorSubject<GenereResponse>();
 
-  getMovies() async {
+  getGeners() async {
     GenereResponse response = await _api.getGeners();
     _subject.sink.add(response);
   }

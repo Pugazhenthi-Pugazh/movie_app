@@ -77,11 +77,11 @@ class API {
     var params = {
       "api_key": apiKey,
       "language": "en-US",
-      "page": 1,
+      "page": 2,
       "with_genres": id
     };
     try {
-      Response response = await dio.get(getPersonsUrl, queryParameters: params);
+      Response response = await dio.get(getMoviesUrl, queryParameters: params);
       return MovieResponse.fromJson(response.data);
     } catch (error, stackTrace) {
       print("Exception occured: $error stackTrace:  $stackTrace");

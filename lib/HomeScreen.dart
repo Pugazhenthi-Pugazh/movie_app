@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/Theme/theme.dart' as Style;
+import 'package:movie_app/Widgets/geners.dart';
+import 'package:movie_app/Widgets/geners_list.dart';
 import 'package:movie_app/Widgets/nowPlayingWidget.dart';
+import 'package:movie_app/Widgets/personsList.dart';
+import 'package:movie_app/Widgets/top_Movies.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -32,7 +36,12 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: ListView(
-        children: [NowPlaying()],
+        children: [
+          NowPlaying(),
+          GenersScreen(),
+          Personslist(),
+          TopRatedMovies()
+        ],
       ),
     );
   }

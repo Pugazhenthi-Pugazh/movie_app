@@ -7,7 +7,7 @@ class GenereResponse {
   GenereResponse(this.geners, this.error);
 
   GenereResponse.fromJson(Map<String, dynamic> json)
-      : geners = (json["results"] as List)
+      : geners = (json["genres"] as List)
             .map((e) => new Genere.fromJson(e))
             .toList(),
         error = "";

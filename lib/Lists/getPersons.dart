@@ -7,7 +7,7 @@ class PersonsList {
   final BehaviorSubject<PersonResponse> _subject =
       BehaviorSubject<PersonResponse>();
 
-  getMovies() async {
+  getPersons() async {
     PersonResponse response = await _api.getPersons();
     _subject.sink.add(response);
   }
